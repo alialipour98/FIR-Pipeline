@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Tue Jan 14 22:36:43 2025
+# Process ID: 16412
+# Current directory: C:/Users/USER/Documents/Vivado_pro/Session_3/FIR Fileter Pipeline/project_FIR
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10052 C:\Users\USER\Documents\Vivado_pro\Session_3\FIR Fileter Pipeline\project_FIR\project_2.xpr
+# Log file: C:/Users/USER/Documents/Vivado_pro/Session_3/FIR Fileter Pipeline/project_FIR/vivado.log
+# Journal file: C:/Users/USER/Documents/Vivado_pro/Session_3/FIR Fileter Pipeline/project_FIR\vivado.jou
+# Running On: digitalWindows, OS: Windows, CPU Frequency: 1992 MHz, CPU Physical cores: 4, Host memory: 17057 MB
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/USER/Documents/Vivado_pro/Session_3/FIR Fileter Pipeline/project_FIR/project_2.xpr}
+update_compile_order -fileset sources_1

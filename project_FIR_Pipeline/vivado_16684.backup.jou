@@ -1,0 +1,169 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Tue Jan 14 23:39:20 2025
+# Process ID: 16684
+# Current directory: C:/Users/USER/Documents/Vivado_pro/Session_3/FIR Fileter Pipeline/project_FIR
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11088 C:\Users\USER\Documents\Vivado_pro\Session_3\FIR Fileter Pipeline\project_FIR\project_2.xpr
+# Log file: C:/Users/USER/Documents/Vivado_pro/Session_3/FIR Fileter Pipeline/project_FIR/vivado.log
+# Journal file: C:/Users/USER/Documents/Vivado_pro/Session_3/FIR Fileter Pipeline/project_FIR\vivado.jou
+# Running On: digitalWindows, OS: Windows, CPU Frequency: 1992 MHz, CPU Physical cores: 4, Host memory: 17057 MB
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/USER/Documents/Vivado_pro/Session_3/FIR Fileter Pipeline/project_FIR/project_2.xpr}
+update_compile_order -fileset sources_1
+update_module_reference design_1_FIR_Direct_Form_IV_0_0
+update_compile_order -fileset sources_1
+generate_target all [get_files {{C:/Users/USER/Documents/Vivado_pro/Session_3/FIR Fileter Pipeline/project_FIR/project_2.srcs/sources_1/bd/design_1/design_1.bd}}]
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{C:/Users/USER/Documents/Vivado_pro/Session_3/FIR Fileter Pipeline/project_FIR/project_2.srcs/sources_1/bd/design_1/design_1.bd}}]
+launch_runs design_1_FIR_Direct_Form_IV_0_0_synth_1
+open_bd_design {C:/Users/USER/Documents/Vivado_pro/Session_3/FIR Fileter Pipeline/project_FIR/project_2.srcs/sources_1/bd/design_1/design_1.bd}
+generate_target all [get_files  {{C:/Users/USER/Documents/Vivado_pro/Session_3/FIR Fileter Pipeline/project_FIR/project_2.srcs/sources_1/bd/design_1/design_1.bd}}]
+catch { config_ip_cache -export [get_ips -all design_1_FIR_Direct_Form_IV_0_0] }
+export_ip_user_files -of_objects [get_files {{C:/Users/USER/Documents/Vivado_pro/Session_3/FIR Fileter Pipeline/project_FIR/project_2.srcs/sources_1/bd/design_1/design_1.bd}}] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{C:/Users/USER/Documents/Vivado_pro/Session_3/FIR Fileter Pipeline/project_FIR/project_2.srcs/sources_1/bd/design_1/design_1.bd}}]
+launch_runs design_1_FIR_Direct_Form_IV_0_0_synth_1 -jobs 6
+update_compile_order -fileset sources_1
+update_module_reference design_1_FIR_Direct_Form_IV_0_0
+generate_target Simulation [get_files {C:/Users/USER/Documents/Vivado_pro/Session_3/FIR Fileter Pipeline/project_FIR/project_2.srcs/sources_1/bd/design_1/design_1.bd}]
+export_ip_user_files -of_objects [get_files {C:/Users/USER/Documents/Vivado_pro/Session_3/FIR Fileter Pipeline/project_FIR/project_2.srcs/sources_1/bd/design_1/design_1.bd}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{C:/Users/USER/Documents/Vivado_pro/Session_3/FIR Fileter Pipeline/project_FIR/project_2.srcs/sources_1/bd/design_1/design_1.bd}}] -directory {C:/Users/USER/Documents/Vivado_pro/Session_3/FIR Fileter Pipeline/project_FIR/project_2.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/USER/Documents/Vivado_pro/Session_3/FIR Fileter Pipeline/project_FIR/project_2.ip_user_files} -ipstatic_source_dir {C:/Users/USER/Documents/Vivado_pro/Session_3/FIR Fileter Pipeline/project_FIR/project_2.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/USER/Documents/Vivado_pro/Session_3/FIR Fileter Pipeline/project_FIR/project_2.cache/compile_simlib/modelsim} {questa=C:/Users/USER/Documents/Vivado_pro/Session_3/FIR Fileter Pipeline/project_FIR/project_2.cache/compile_simlib/questa} {riviera=C:/Users/USER/Documents/Vivado_pro/Session_3/FIR Fileter Pipeline/project_FIR/project_2.cache/compile_simlib/riviera} {activehdl=C:/Users/USER/Documents/Vivado_pro/Session_3/FIR Fileter Pipeline/project_FIR/project_2.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+source design_1_wrapper_tb.tcl
+relaunch_sim
+relaunch_sim
+relaunch_sim
+close_sim
+update_module_reference design_1_FIR_Direct_Form_IV_0_0
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+create_clock -period 10.000 -name clk -waveform {0.000 5.000} [get_ports clk]
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+file mkdir {C:/Users/USER/Documents/Vivado_pro/Session_3/FIR Fileter Pipeline/project_FIR/project_2.srcs/constrs_1/new}
+close [ open {C:/Users/USER/Documents/Vivado_pro/Session_3/FIR Fileter Pipeline/project_FIR/project_2.srcs/constrs_1/new/pin_assignment.xdc} w ]
+add_files -fileset constrs_1 {{C:/Users/USER/Documents/Vivado_pro/Session_3/FIR Fileter Pipeline/project_FIR/project_2.srcs/constrs_1/new/pin_assignment.xdc}}
+set_property target_constrs_file {C:/Users/USER/Documents/Vivado_pro/Session_3/FIR Fileter Pipeline/project_FIR/project_2.srcs/constrs_1/new/pin_assignment.xdc} [current_fileset -constrset]
+save_constraints -force
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+update_module_reference design_1_FIR_Direct_Form_IV_0_0
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+close_bd_design [get_bd_designs design_1]
+close [ open {C:/Users/USER/Documents/Vivado_pro/Session_3/FIR Fileter Pipeline/project_FIR/project_2.srcs/sources_1/new/FIR_Direct_Form_IV_systolic.v} w ]
+add_files {{C:/Users/USER/Documents/Vivado_pro/Session_3/FIR Fileter Pipeline/project_FIR/project_2.srcs/sources_1/new/FIR_Direct_Form_IV_systolic.v}}
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/USER/Documents/Vivado_pro/Session_3/FIR Fileter Pipeline/project_FIR/project_2.srcs/sources_1/bd/design_1/design_1.bd}
+create_bd_design "design_2"
+update_compile_order -fileset sources_1
+create_bd_cell -type module -reference FIR_Direct_Form_IV_systolic FIR_Direct_Form_IV_s_0
+set_property screensize {219 196} [get_bd_cells FIR_Direct_Form_IV_s_0]
+current_bd_design [get_bd_designs design_1]
+current_bd_design [get_bd_designs design_2]
+current_bd_design design_1
+set tmpCopyObjs [concat  [get_bd_cells {xlconstant_0}]]
+current_bd_design design_2
+copy_bd_objs -from_design design_1 / $tmpCopyObjs
+set_property location {1 71 -34} [get_bd_cells xlconstant_0]
+connect_bd_net [get_bd_pins xlconstant_0/dout] [get_bd_pins FIR_Direct_Form_IV_s_0/input0]
+startgroup
+make_bd_pins_external  [get_bd_pins FIR_Direct_Form_IV_s_0/clk]
+endgroup
+set_property name clk [get_bd_ports clk_0]
+startgroup
+make_bd_pins_external  [get_bd_pins FIR_Direct_Form_IV_s_0/output0]
+endgroup
+set_property name output0 [get_bd_ports output0_0]
+make_wrapper -files [get_files {{C:/Users/USER/Documents/Vivado_pro/Session_3/FIR Fileter Pipeline/project_FIR/project_2.srcs/sources_1/bd/design_2/design_2.bd}}] -top
+add_files -norecurse {{c:/Users/USER/Documents/Vivado_pro/Session_3/FIR Fileter Pipeline/project_FIR/project_2.gen/sources_1/bd/design_2/hdl/design_2_wrapper.v}}
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open {C:/Users/USER/Documents/Vivado_pro/Session_3/FIR Fileter Pipeline/project_FIR/project_2.srcs/sim_1/new/design_2_wrapper_tb.v} w ]
+add_files -fileset sim_1 {{C:/Users/USER/Documents/Vivado_pro/Session_3/FIR Fileter Pipeline/project_FIR/project_2.srcs/sim_1/new/design_2_wrapper_tb.v}}
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top design_2_wrapper_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+current_bd_design [get_bd_designs design_1]
+current_bd_design [get_bd_designs design_2]
+generate_target Simulation [get_files {C:/Users/USER/Documents/Vivado_pro/Session_3/FIR Fileter Pipeline/project_FIR/project_2.srcs/sources_1/bd/design_2/design_2.bd}]
+export_ip_user_files -of_objects [get_files {C:/Users/USER/Documents/Vivado_pro/Session_3/FIR Fileter Pipeline/project_FIR/project_2.srcs/sources_1/bd/design_2/design_2.bd}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{C:/Users/USER/Documents/Vivado_pro/Session_3/FIR Fileter Pipeline/project_FIR/project_2.srcs/sources_1/bd/design_2/design_2.bd}}] -directory {C:/Users/USER/Documents/Vivado_pro/Session_3/FIR Fileter Pipeline/project_FIR/project_2.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/USER/Documents/Vivado_pro/Session_3/FIR Fileter Pipeline/project_FIR/project_2.ip_user_files} -ipstatic_source_dir {C:/Users/USER/Documents/Vivado_pro/Session_3/FIR Fileter Pipeline/project_FIR/project_2.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/USER/Documents/Vivado_pro/Session_3/FIR Fileter Pipeline/project_FIR/project_2.cache/compile_simlib/modelsim} {questa=C:/Users/USER/Documents/Vivado_pro/Session_3/FIR Fileter Pipeline/project_FIR/project_2.cache/compile_simlib/questa} {riviera=C:/Users/USER/Documents/Vivado_pro/Session_3/FIR Fileter Pipeline/project_FIR/project_2.cache/compile_simlib/riviera} {activehdl=C:/Users/USER/Documents/Vivado_pro/Session_3/FIR Fileter Pipeline/project_FIR/project_2.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+source design_2_wrapper_tb.tcl
+close_sim
+launch_simulation
+source design_2_wrapper_tb.tcl
+relaunch_sim
+close_sim
+update_module_reference design_2_FIR_Direct_Form_IV_s_0_0
+update_module_reference design_2_FIR_Direct_Form_IV_s_0_0
+generate_target Simulation [get_files {C:/Users/USER/Documents/Vivado_pro/Session_3/FIR Fileter Pipeline/project_FIR/project_2.srcs/sources_1/bd/design_2/design_2.bd}]
+export_ip_user_files -of_objects [get_files {C:/Users/USER/Documents/Vivado_pro/Session_3/FIR Fileter Pipeline/project_FIR/project_2.srcs/sources_1/bd/design_2/design_2.bd}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{C:/Users/USER/Documents/Vivado_pro/Session_3/FIR Fileter Pipeline/project_FIR/project_2.srcs/sources_1/bd/design_2/design_2.bd}}] -directory {C:/Users/USER/Documents/Vivado_pro/Session_3/FIR Fileter Pipeline/project_FIR/project_2.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/USER/Documents/Vivado_pro/Session_3/FIR Fileter Pipeline/project_FIR/project_2.ip_user_files} -ipstatic_source_dir {C:/Users/USER/Documents/Vivado_pro/Session_3/FIR Fileter Pipeline/project_FIR/project_2.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/USER/Documents/Vivado_pro/Session_3/FIR Fileter Pipeline/project_FIR/project_2.cache/compile_simlib/modelsim} {questa=C:/Users/USER/Documents/Vivado_pro/Session_3/FIR Fileter Pipeline/project_FIR/project_2.cache/compile_simlib/questa} {riviera=C:/Users/USER/Documents/Vivado_pro/Session_3/FIR Fileter Pipeline/project_FIR/project_2.cache/compile_simlib/riviera} {activehdl=C:/Users/USER/Documents/Vivado_pro/Session_3/FIR Fileter Pipeline/project_FIR/project_2.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+source design_2_wrapper_tb.tcl
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+close_sim
+update_module_reference design_2_FIR_Direct_Form_IV_s_0_0
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top design_2_wrapper [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+generate_target all [get_files {{C:/Users/USER/Documents/Vivado_pro/Session_3/FIR Fileter Pipeline/project_FIR/project_2.srcs/sources_1/bd/design_2/design_2.bd}}]
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{C:/Users/USER/Documents/Vivado_pro/Session_3/FIR Fileter Pipeline/project_FIR/project_2.srcs/sources_1/bd/design_2/design_2.bd}}]
+launch_runs design_2_FIR_Direct_Form_IV_s_0_0_synth_1
+wait_on_run design_2_FIR_Direct_Form_IV_s_0_0_synth_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+close_design
+launch_simulation
+source design_2_wrapper_tb.tcl
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+restart
+run 100 us
+close_sim
+update_module_reference design_2_FIR_Direct_Form_IV_s_0_0
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+current_bd_design [get_bd_designs design_1]
+close_bd_design [get_bd_designs design_1]
+close_bd_design [get_bd_designs design_2]
+open_run synth_1 -name synth_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+report_utilization -name utilization_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top design_1_wrapper [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+close_design
+open_run synth_1 -name synth_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+report_utilization -name utilization_1
+close_design

@@ -1,0 +1,17 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../project_2.srcs/sources_1/new/Adder_nbit.v" \
+"../../../../project_2.srcs/sources_1/new/Mul_nbit.v" \
+"../../../../project_2.srcs/sources_1/new/Register_nbit.v" \
+"../../../../project_2.srcs/sources_1/new/FIR_Direct_Form_IV.v" \
+"../../../../project_2.ip_user_files/bd/design_1/ip/design_1_xlconstant_0_0/sim/design_1_xlconstant_0_0.v" \
+"../../../../project_2.ip_user_files/bd/design_1/ip/design_1_FIR_Direct_Form_IV_0_0/sim/design_1_FIR_Direct_Form_IV_0_0.v" \
+"../../../../project_2.ip_user_files/bd/design_1/sim/design_1.v" \
+"../../../../project_2.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v" \
+"../../../../project_2.srcs/sim_1/new/design_1_wrapper_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

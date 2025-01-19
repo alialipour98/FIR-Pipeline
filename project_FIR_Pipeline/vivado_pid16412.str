@@ -1,0 +1,323 @@
+/*
+
+Xilinx Vivado v2021.2 (64-bit) [Major: 2021, Minor: 2]
+SW Build: 3367213 on Tue Oct 19 02:48:09 MDT 2021
+IP Build: 3369179 on Thu Oct 21 08:25:16 MDT 2021
+
+Process ID (PID): 16412
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Tue Jan 14 22:37:09 IRST 2025
+Time zone: 	Iran Standard Time (Asia/Tehran)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+
+Java version: 	11.0.11 64-bit
+Java home: 	C:/Xilinx/Vivado/2021.2/tps/win64/jre11.0.11_9
+Java executable: 	C:/Xilinx/Vivado/2021.2/tps/win64/jre11.0.11_9/bin/java.exe
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Dsun.java2d.d3d=false, -Dsun.awt.nopixfmt=true, -Dsun.java2d.dpiaware=true, -Dsun.java2d.uiScale.enabled=false, -Xverify:none, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/com.sun.awt=ALL-UNNAMED, -XX:NewSize=60m, -XX:MaxNewSize=60m, -Xms256m, -Xmx3072m, -Xss5m]
+Java initial memory (-Xms): 	256 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	Ali
+User home directory: C:/Users/USER
+User working directory: C:/Users/USER/Documents/Vivado_pro/Session_3/FIR Fileter Pipeline/project_FIR
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2021.2
+RDI_DATADIR: C:/Xilinx/Vivado/2021.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2021.2/bin
+
+Vivado preferences file: C:/Users/USER/AppData/Roaming/Xilinx/Vivado/2021.2/vivado.xml
+Vivado preferences directory: C:/Users/USER/AppData/Roaming/Xilinx/Vivado/2021.2/
+Vivado layouts directory: C:/Users/USER/AppData/Roaming/Xilinx/Vivado/2021.2/data/layouts
+PlanAhead jar file: 	C:/Xilinx/Vivado/2021.2/lib/classes/planAhead.jar
+Vivado log file: 	C:/Users/USER/Documents/Vivado_pro/Session_3/FIR Fileter Pipeline/project_FIR/vivado.log
+Vivado journal file: 	C:/Users/USER/Documents/Vivado_pro/Session_3/FIR Fileter Pipeline/project_FIR/vivado.jou
+Engine tmp dir: 	C:/Users/USER/Documents/Vivado_pro/Session_3/FIR Fileter Pipeline/project_FIR/.Xil/Vivado-16412-digitalWindows
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2021.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2021.2/ids_lite/ISE
+XILINX_HLS: C:/Xilinx/Vitis_HLS/2021.2
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2021.2
+XILINX_SDK: C:/Xilinx/Vitis/2021.2
+XILINX_VITIS: C:/Xilinx/Vitis/2021.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2021.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2021.2
+
+
+GUI allocated memory:	256 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,376 MB
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 71 MB (+71450kb) [00:00:09]
+// [Engine Memory]: 1,376 MB (+1290967kb) [00:00:09]
+// Opening Vivado Project: C:\Users\USER\Documents\Vivado_pro\Session_3\FIR Fileter Pipeline\project_FIR\project_2.xpr. Version: Vivado v2021.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// Tcl Message: open_project {C:/Users/USER/Documents/Vivado_pro/Session_3/FIR Fileter Pipeline/project_FIR/project_2.xpr} 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,376 MB. GUI used memory: 56 MB. Current time: 1/14/25, 10:37:10 PM IRST
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project {C:/Users/USER/Documents/Vivado_pro/Session_3/FIR Fileter Pipeline/project_FIR/project_2.xpr} 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/USER/Documents/Vivado_pro/Session_2/FIR Fileter/project_FIR' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.2/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 76 MB (+2404kb) [00:00:19]
+// [GUI Memory]: 86 MB (+6175kb) [00:00:20]
+// WARNING: HEventQueue.dispatchEvent() is taking  3952 ms.
+// Tcl Message: open_project: Time (s): cpu = 00:00:26 ; elapsed = 00:00:12 . Memory (MB): peak = 1410.230 ; gain = 0.000 
+// [GUI Memory]: 109 MB (+19858kb) [00:00:23]
+// Project name: project_2; location: C:/Users/USER/Documents/Vivado_pro/Session_3/FIR Fileter Pipeline/project_FIR; part: xc7z020clg400-1
+dismissDialog("Open Project"); // bA
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// [GUI Memory]: 115 MB (+534kb) [00:00:34]
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 123 MB (+2203kb) [00:04:46]
+// Elapsed time: 371 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FIR_Direct_Form_IV (FIR_Direct_Form_IV.v)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FIR_Direct_Form_IV (FIR_Direct_Form_IV.v)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FIR_Direct_Form_IV (FIR_Direct_Form_IV.v), genblk1[1].reg_inst : Register_nbit (Register_nbit.v)]", 4, false, false, false, false, false, true); // D - Double Click
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FIR_Direct_Form_IV (FIR_Direct_Form_IV.v)]", 2); // D
+// HMemoryUtils.trashcanNow. Engine heap size: 1,376 MB. GUI used memory: 65 MB. Current time: 1/14/25, 10:44:02 PM IRST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,376 MB. GUI used memory: 65 MB. Current time: 1/14/25, 10:44:32 PM IRST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,376 MB. GUI used memory: 65 MB. Current time: 1/14/25, 10:45:02 PM IRST
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1177221 ms. Increasing delay to 3531663 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  275539 ms.
+// Thread: AWT-Shutdown
+// 	at java.base@11.0.11/java.lang.Object.wait(Native Method)
+// 	at java.base@11.0.11/java.lang.Object.wait(Object.java:328)
+// 	at java.desktop@11.0.11/sun.awt.AWTAutoShutdown.run(AWTAutoShutdown.java:291)
+// 	at java.base@11.0.11/java.lang.Thread.run(Thread.java:829)
+// Thread: pool-1-thread-1
+// 	at java.base@11.0.11/jdk.internal.misc.Unsafe.park(Native Method)
+// 	at java.base@11.0.11/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+// 	at java.base@11.0.11/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+// 	at java.base@11.0.11/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:433)
+// 	at java.base@11.0.11/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+// 	at java.base@11.0.11/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+// 	at java.base@11.0.11/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+// 	at java.base@11.0.11/java.lang.Thread.run(Thread.java:829)
+// Thread: AWT-EventQueue-0
+// 	at java.base@11.0.11/jdk.internal.misc.Unsafe.park(Native Method)
+// 	at java.base@11.0.11/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+// 	at java.base@11.0.11/java.util.concurrent.CompletableFuture$Signaller.block(CompletableFuture.java:1798)
+// 	at java.base@11.0.11/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3128)
+// 	at java.base@11.0.11/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1868)
+// 	at java.base@11.0.11/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2021)
+// 	at ui.k.c.X.a(SourceFile:121)
+// 	at ui.k.c.X$$Lambda$295/0x0000000800b20840.test(Unknown Source)
+// 	at java.base@11.0.11/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:176)
+// 	at java.base@11.0.11/java.util.HashMap$ValueSpliterator.tryAdvance(HashMap.java:1696)
+// 	at java.base@11.0.11/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:278)
+// 	at java.base@11.0.11/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+// 	at java.base@11.0.11/java.util.HashMap$ValueSpliterator.tryAdvance(HashMap.java:1696)
+// 	at java.base@11.0.11/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+// 	at java.base@11.0.11/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+// 	at java.base@11.0.11/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+// 	at java.base@11.0.11/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+// 	at java.base@11.0.11/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+// 	at java.base@11.0.11/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+// 	at java.base@11.0.11/java.util.stream.ReferencePipeline.findAny(ReferencePipeline.java:548)
+// 	at ui.k.c.X.s(SourceFile:130)
+// 	at ui.k.c.X.ca(SourceFile:58)
+// 	at ui.k.c.E.iDZ(SourceFile:128)
+// 	at ui.k.c.E.bS(SourceFile:398)
+// 	at ui.views.U.a.a.setFile(SourceFile:2690)
+// 	at ui.k.c.E.setFile(SourceFile:99)
+// 	at ui.views.R.D.e(SourceFile:226)
+// 	at ui.views.U.a.S.createCodeEditor(SourceFile:180)
+// 	at com.jidesoft.editor.CodeEditorDocumentComponent.initComponents(Unknown Source)
+// 	at ui.views.U.a.S.initComponents(SourceFile:172)
+// 	at ui.views.U.a.S.<init>(SourceFile:55)
+// 	at ui.k.c.J.<init>(SourceFile:31)
+// 	at ui.views.U.j.<init>(SourceFile:2417)
+// 	at ui.views.U.a.a(SourceFile:2417)
+// 	at ui.views.U.a.a(SourceFile:425)
+// 	at ui.views.U.a.a(SourceFile:375)
+// 	at ui.views.U.a.a(SourceFile:253)
+// 	at ui.views.U.a.a(SourceFile:302)
+// 	at ui.views.U.a.a(SourceFile:267)
+// 	at ui.views.o.aa.b(SourceFile:493)
+// 	at ui.views.o.af.c(SourceFile:478)
+// 	at ui.views.o.af$$Lambda$299/0x0000000800b2e840.run(Unknown Source)
+// 	at java.desktop@11.0.11/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:313)
+// 	at java.desktop@11.0.11/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:770)
+// 	at java.desktop@11.0.11/java.awt.EventQueue$4.run(EventQueue.java:721)
+// 	at java.desktop@11.0.11/java.awt.EventQueue$4.run(EventQueue.java:715)
+// 	at java.base@11.0.11/java.security.AccessController.doPrivileged(Native Method)
+// 	at java.base@11.0.11/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+// 	at java.desktop@11.0.11/java.awt.EventQueue.dispatchEvent(EventQueue.java:740)
+// 	at ui.frmwork.a.d.dispatchEvent(SourceFile:92)
+// 	at java.desktop@11.0.11/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+// 	at java.desktop@11.0.11/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+// 	at java.desktop@11.0.11/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+// 	at java.desktop@11.0.11/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+// 	at java.desktop@11.0.11/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+// 	at java.desktop@11.0.11/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+// Thread: Thread-38
+// Thread: SyntheticaAnimation 25
+// 	at java.base@11.0.11/java.lang.Thread.sleep(Native Method)
+// 	at de.javasoft.plaf.synthetica.painter.AnimationThreadFactory$AnimationThread.run(AnimationThreadFactory.java:119)
+// Thread: pool-3-thread-1
+// 	at java.base@11.0.11/jdk.internal.misc.Unsafe.park(Native Method)
+// 	at java.base@11.0.11/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+// 	at java.base@11.0.11/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+// 	at java.base@11.0.11/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:433)
+// 	at java.base@11.0.11/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+// 	at java.base@11.0.11/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+// 	at java.base@11.0.11/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+// 	at java.base@11.0.11/java.lang.Thread.run(Thread.java:829)
+// Thread: Reference Handler
+// 	at java.base@11.0.11/java.lang.ref.Reference.waitForReferencePendingList(Native Method)
+// 	at java.base@11.0.11/java.lang.ref.Reference.processPendingReferences(Reference.java:241)
+// 	at java.base@11.0.11/java.lang.ref.Reference$ReferenceHandler.run(Reference.java:213)
+// Thread: pool-2-thread-1
+// 	at java.base@11.0.11/jdk.internal.misc.Unsafe.park(Native Method)
+// 	at java.base@11.0.11/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+// 	at java.base@11.0.11/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+// 	at java.base@11.0.11/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:433)
+// 	at java.base@11.0.11/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+// 	at java.base@11.0.11/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+// 	at java.base@11.0.11/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+// 	at java.base@11.0.11/java.lang.Thread.run(Thread.java:829)
+// Thread: Signal Dispatcher
+// Thread: Java2D Disposer
+// 	at java.base@11.0.11/java.lang.Object.wait(Native Method)
+// 	at java.base@11.0.11/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+// 	at java.base@11.0.11/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:176)
+// 	at java.desktop@11.0.11/sun.java2d.Disposer.run(Disposer.java:144)
+// 	at java.base@11.0.11/java.lang.Thread.run(Thread.java:829)
+// Thread: Finalizer
+// 	at java.base@11.0.11/java.lang.Object.wait(Native Method)
+// 	at java.base@11.0.11/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+// 	at java.base@11.0.11/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:176)
+// 	at java.base@11.0.11/java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:170)
+// Thread: Common-Cleaner
+// 	at java.base@11.0.11/java.lang.Object.wait(Native Method)
+// 	at java.base@11.0.11/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+// 	at java.base@11.0.11/jdk.internal.ref.CleanerImpl.run(CleanerImpl.java:148)
+// 	at java.base@11.0.11/java.lang.Thread.run(Thread.java:829)
+// 	at java.base@11.0.11/jdk.internal.misc.InnocuousThread.run(InnocuousThread.java:134)
+// Thread: SyntheticaAnimation 50
+// 	at java.base@11.0.11/java.lang.Thread.sleep(Native Method)
+// 	at ui.utils.lnf.b.run(SourceFile:100)
+// Thread: main
+// 	at java.base@11.0.11/java.lang.Thread.sleep(Native Method)
+// 	at ui.PlanAhead.c(SourceFile:1150)
+// 	at ui.PlanAhead.jswMain(SourceFile:1197)
+// Thread: Batik CleanerThread
+// 	at java.base@11.0.11/java.lang.Object.wait(Native Method)
+// 	at java.base@11.0.11/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+// 	at java.base@11.0.11/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:176)
+// 	at org.apache.batik.util.CleanerThread.run(CleanerThread.java:106)
+// Thread: Update Runs Swing Worker Thread
+// 	at java.base@11.0.11/java.lang.Thread.sleep(Native Method)
+// 	at ui.data.experiment.F.aXx(SourceFile:373)
+// 	at ui.frmwork.y.run(SourceFile:206)
+// 	at java.base@11.0.11/java.lang.Thread.run(Thread.java:829)
+// Thread: TimerQueue
+// 	at java.base@11.0.11/jdk.internal.misc.Unsafe.park(Native Method)
+// 	at java.base@11.0.11/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+// 	at java.base@11.0.11/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
+// 	at java.base@11.0.11/java.util.concurrent.DelayQueue.take(DelayQueue.java:229)
+// 	at java.desktop@11.0.11/javax.swing.TimerQueue.run(TimerQueue.java:171)
+// 	at java.base@11.0.11/java.lang.Thread.run(Thread.java:829)
+// Thread: hw_ila_monitor
+// 	at java.base@11.0.11/java.lang.Object.wait(Native Method)
+// 	at java.base@11.0.11/java.lang.Object.wait(Object.java:328)
+// 	at java.base@11.0.11/java.util.TimerThread.mainLoop(Timer.java:527)
+// 	at java.base@11.0.11/java.util.TimerThread.run(Timer.java:506)
+// Thread: Attach Listener
+// Thread: SyntheticaAnimation 70
+// 	at java.base@11.0.11/java.lang.Thread.sleep(Native Method)
+// 	at de.javasoft.plaf.synthetica.painter.AnimationThreadFactory$AnimationThread.run(AnimationThreadFactory.java:119)
+// Thread: Monitor HEventQueue Thread
+// 	at java.base@11.0.11/java.lang.Thread.dumpThreads(Native Method)
+// 	at java.base@11.0.11/java.lang.Thread.getAllStackTraces(Thread.java:1653)
+// 	at ui.utils.d.c.iPe(SourceFile:589)
+// 	at ui.frmwork.a.e.aXx(SourceFile:144)
+// 	at ui.frmwork.y.run(SourceFile:206)
+// 	at java.base@11.0.11/java.lang.Thread.run(Thread.java:829)
+// Thread: SyntheticaCleanerThread
+// 	at java.base@11.0.11/java.lang.Thread.sleep(Native Method)
+// 	at de.javasoft.plaf.synthetica.StyleFactory$ComponentPropertyStore$1.run(StyleFactory.java:1885)
+// Thread: Refresh Filesets Swing Worker Thread
+// 	at java.base@11.0.11/java.lang.Thread.sleep(Native Method)
+// 	at ui.data.design.z.aXx(SourceFile:2513)
+// 	at ui.frmwork.y.run(SourceFile:206)
+// 	at java.base@11.0.11/java.lang.Thread.run(Thread.java:829)
+// Thread: Thread-37
+// Thread: Thread-1
+// Thread: Process Messages Thread
+// 	at java.base@11.0.11/java.lang.Thread.sleep(Native Method)
+// 	at ui.frmwork.c.h.aXx(SourceFile:133)
+// 	at ui.frmwork.y.run(SourceFile:206)
+// 	at java.base@11.0.11/java.lang.Thread.run(Thread.java:829)
+// Thread: AWT-Windows
+// 	at java.desktop@11.0.11/sun.awt.windows.WToolkit.eventLoop(Native Method)
+// 	at java.desktop@11.0.11/sun.awt.windows.WToolkit.run(WToolkit.java:305)
+// 	at java.base@11.0.11/java.lang.Thread.run(Thread.java:829)
+// Thread: Thread-18
+// 	at java.base@11.0.11/java.lang.Thread.sleep(Native Method)
+// 	at ui.k.c.z.iHj(SourceFile:136)
+// 	at ui.k.c.z$$Lambda$253/0x000000080085fc40.run(Unknown Source)
+// 	at java.base@11.0.11/java.lang.Thread.run(Thread.java:829)
+// Thread: SyntheticaAnimation 50
+// 	at java.base@11.0.11/java.lang.Thread.sleep(Native Method)
+// 	at de.javasoft.plaf.synthetica.painter.AnimationThreadFactory$AnimationThread.run(AnimationThreadFactory.java:119)
+// WARNING: HEventQueue.dispatchEvent() is taking  3814 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,376 MB. GUI used memory: 58 MB. Current time: 1/14/25, 11:29:54 PM IRST
+// Elapsed time: 2777 seconds
+dismissDialog("Opening Editor"); // bA
+// Elapsed time: 472 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FIR_Direct_Form_IV (FIR_Direct_Form_IV.v)]", 2); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FIR_Direct_Form_IV (FIR_Direct_Form_IV.v)]", 2); // D
+selectCodeEditor("FIR_Direct_Form_IV.v", 319, 71); // be
